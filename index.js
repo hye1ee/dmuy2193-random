@@ -119,6 +119,9 @@ const restyle = () => {
 };
 
 document.getElementById("button-submit").addEventListener("click", () => {
+  document.getElementById("div-description").innerText = `${
+    document.getElementById("input-name").value
+  }, your dragon name is`;
   document.getElementById("div-result").innerText = generator(
     document.getElementById("input-name").value
   );
